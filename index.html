@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <meta name="google-signin-client_id" content="17430332613-jc5j3ai4s316dlv9j1suflbheujmlhgo.apps.googleusercontent.com" />
+    <title>Good Name Here</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="Materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="Materialize/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+<!-- Important part is starting, be careful and don't mess up everything. Thanks-->
+
+<body>
+    <!-- Navigation Bar -->
+    <!--First Block of Content-->
+    <div class="section scrollspy" id="work">
+        <div class="container">
+            <h2 class="header text_b">Acess Zone </h2>
+            <div class="row">
+                <!--Template-->
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="Materialize/images/project1.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Portfolio <i class="mdi-navigation-more-vert right"></i></span>
+                            <p><a href="portfolio/index.html">Portfolio</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4"><b>Portfolio</b> <i class="mdi-navigation-close right"></i></span>
+                            <p>An awesome portfolio made by no one more than me. It's a complete shit, I Know. Sorry for the incovinient.</p>
+                            <p><b> Framework: </b> Materialize Css</p>
+                            <p><b> Release Date: </b> I'm too lazy to replace this with another stupid thing</p>
+                            <p><b> Genre: </b> Hummnn... Portfolio?</p>
+                            <p><b> Dev: </b> Daniel Cavalli</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Template-->
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="Materialize/images/Acess.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">CoinGraph <i class="mdi-navigation-more-vert right"></i></span>
+                            <p><a href="coinchart/index.html">CoinGraph</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4"><a href="coinchart/index.html"><b>CoinGraph </b></a><i class="mdi-navigation-close right"></i></span>
+                            <p>A plataform to monitorize BitCoin and LiteCoin and study their Flow Chart Pattern.</p>
+                            <p><b> API: </b> CoinMarketCap</p>
+                            <p><b> Release Date: </b> 01/10/2016</p>
+                            <p><b> Genre: </b> Bussines Application</p>
+                            <p><b> Dev: </b> Daniel Cavalli</p>
+                            <p><b> License for Use: </b> Free to use as base of anything you want.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="Materialize/images/project1.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">PlaceHolder <i class="mdi-navigation-more-vert right"></i></span>
+                            <p><a href="#">PlaceHolder</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4"><span class="span_h2">PlaceHolder</span><i class="mdi-navigation-close right"></i></span>
+                            <p>"A game... With Games.. IN THE GAME! Great Game." - MiniLympics is a game made for SBGames, an event from Brasil that gives to the winner a certificate and great recognizing. It's a action-puzzle game with theme based on Paralympics, uses minigames to introduce the action and puzzle genre, we have 30 minigames for this.</p>
+                            <p><b> Engine: </b> Unity</p>
+                            <p><b> Release Date: </b> 03/08/2015</p>
+                            <p><b> Genre: </b> Action and Puzzle</p>
+                            <p><b> Devs: </b> WorkShop</p>
+                            <p><b> My Function: </b> Programmer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="parallax-container">
+    <div class="parallax"><img src="Materialize/images/project1.jpg"></div>
+</div>
+	<!--Footer-->
+<footer id="contact" class="page-footer light-green darken-4 scrollspy">
+    <div class="container">  
+    </div>
+    <div class="footer-copyright green darken-4">
+        <div class="container">
+            Made with <a class="white-text" href="http://materializecss.com/">materializecss</a> © Daniel Cavalli. Half of the rights reserved.
+        </div>
+    </div>
+</footer>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="Materialize/js/materialize.js"></script>
+    <script src="Materialize/js/init.js"></script>
+    <script>
+        var color = 0;
+
+        function colorChanger() {
+            if (color >= 5) {
+                color = 0;
+            } else {
+                color++;
+            }
+            if (color == 0) {
+                $(".grey").removeClass("grey").addClass("teal");
+                $(".grey-text").removeClass("grey-text").addClass("teal-text");
+            } else if (color == 1) {
+                $(".teal").removeClass("teal").addClass("blue");
+                $(".teal-text").removeClass("teal-text").addClass("blue-text");
+            } else if (color == 2) {
+                $(".blue").removeClass("blue").addClass("green");
+                $(".blue-text").removeClass("blue-text").addClass("green-text");
+            } else if (color == 3) {
+                $(".green").removeClass("green").addClass("pink");
+                $(".green-text").removeClass("green-text").addClass("pink-text");
+            } else if (color == 4) {
+                $(".pink").removeClass("pink").addClass("amber");
+                $(".pink-text").removeClass("pink-text").addClass("amber-text");
+            } else if (color == 5) {
+                $(".amber").removeClass("amber").addClass("grey");
+                $(".amber-text").removeClass("amber-text").addClass("grey-text");
+            }
+            var a = document.getElementById("CurrentColor").className.split(' ')[4];
+            Materialize.toast('I am ' + a + ' now', 750, 'rounded');
+        }
+        var number = 0;
+
+        function dontclick() {
+            number += 1;
+            if (number == 1) {
+                Materialize.toast("\"Don't Click\", your read it?", 2000);
+            }
+            if (number == 10) {
+                Materialize.toast("You really have problems, don't you?", 6000);
+            }
+            if (number == 50) {
+                Materialize.toast("HOLY FUCKING SATAN! Why? Just tell me that.", 10000);
+            }
+            if (number == 250) {
+                Materialize.toast("\"Some people say that out of my room there is something called 'world', maybe I should see if it's truth.\" - He thought in a moment of loneliness", 9000);
+            }
+            if (number == 1000) {
+                Materialize.toast("You know that no one will never heard about this, don't you?", 10000);
+            }
+            if (number == 2500) {
+                Materialize.toast("Hmm, maybe you're thinking you'll get to your friends and say \"Hey, I've got the '5 thousand clicks' message, did you get it? It's sooooo awesome\", I highly don't recommend this, it'll be awkward.", 15000);
+            }
+            if (number == 5000) {
+                Materialize.toast("You need a good person in your life. I know it may be hard for someone like you but try!", 10000);
+            }
+            if (number == 10000) {
+                Materialize.toast("I'm out, you won... You really are the strangest person I've ever seen.", 10000);
+            }
+        }
+    </script>
+</body>
+
+</html>
