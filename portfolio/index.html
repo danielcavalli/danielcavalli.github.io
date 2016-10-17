@@ -13,72 +13,57 @@
     <link href="../Materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="../Materialize/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
-<body id="top" class="scrollspy">
+<body>
+  <nav class="light-green lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo light">Daniel Cavalli</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
 
-<!-- Pre Loader -->
-<div id="loader-wrapper">
-    <div id="loader"></div>
- 
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
- 
-</div>
-
-<!--Navigation-->
- <div class="navbar-fixed">
-    <nav id="nav_f" class="light-green darken-4" role="navigation">
-        <div class="container">
-            <div class="nav-wrapper"><a id="logo-container" href="#top" class="brand-logo">DANIEL CAVALLI</a>
-            <ul id="nav-mobile" class="right side-nav">
-                <li><a href="#intro">About</a></li>
-                <li><a href="#work">Works</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="" target="_blank">Downloads</a></li>
-            </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-            </div>
-        </div>
-    </nav>
-</div>
-
-<!---->
-<div class="section no-pad-bot light-green darken-4" id="index-banner">
-    <div class="container">
-        <h1 class="text_h center header cd-headline letters type">
-            <span>Daniel C.</span> 
-            <span class="cd-words-wrapper waiting">
-                <b class="is-visible">Programmer</b>
-                <b>Economist</b>
-				<b>Something</b>
-            </span>
-        </h1>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
-</div>
+  </nav>
+  <!--First Block of Content-->
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <h1 class="header center teal-text text-darken-2">Error 400</h1>
+            <div class="row center">
+                <h6 class="header col s12 light">Bad Request</h6>
+				<h5 class="header col s12 light"><font color="white" id="LiteCoin"></h5>
+            </div>
+            <div class="row center">
+                <a id="CurrentColor" onclick = "colorChanger()" class="btn-large waves-effect waves-light darken-1 teal">Don't Click</a>
+            </div>
+            </br>
+            </br>
 
-<!--Intro and service-->
+        </div>
+    </div>
+ <!--Intro and service-->
 <div id="intro" class="section scrollspy">
     <div class="container">
         <div class="row">
-            <div  class="col s12">
-                <h2 class="center header text_h2"> Daniel Cavalli, <span class="span_h2">Indie Developer and Programmer, </span> student at NAVE, a full-time High School with a course of programmation. I want to do <span class="span_h2">Economy</span> as graduation and make it a life job.</h2>
-            </div>
 
 			<div class="col s12 m4 l4">
                 <div class="center promo promo-example">
-                    <i class="large material-icons">games</i>
+                    <h2 class="center"><i class="medium material-icons">settings</i></h2>
                     <h5 class="promo-caption">Indie Developer</h5>
                     <p class="light center">Developing games is a area of expertise because of my High School course. We have developed tons of games and I've learnt a lot with the process.</p>
                 </div>
             </div>
             <div  class="col s12 m4 l4">
                 <div class="center promo promo-example">
-                    <i class="large material-icons">insert_chart</i>
+                    <h2 class="center"><i class="medium material-icons">settings</i></h2>
                     <h5 class="promo-caption">Economy as First Choice</h5>
                     <p class="light center">Since I developed my critic sense I've started to become more and more interested about Economy and its sub-parts. I studied by my own and I've figured out that Economy is what I want to do the rest of my life.</p>
                 </div>
             </div>
             <div class="col s12 m4 l4">
                 <div class="center promo promo-example">
-                    <i class="large material-icons">phonelink_setup</i>
+                    <h2 class="center"><i class="medium material-icons">settings</i></h2>
                     <h5 class="promo-caption">App Development</h5>
                     <p class="light center">Mixing programmation and economy I've found the app development. Making apps focusing in the bussines market were my goal through my 3rd grade.</p>
                 </div>
@@ -86,7 +71,6 @@
         </div>
     </div>
 </div>
-
 <!--Work-->
 <div class="section scrollspy" id="work">
     <div class="container">
@@ -228,83 +212,50 @@
         </div>
     </div>
 </div>
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
 
-<!--Parallax-->
-<div class="parallax-container">
-    <div class="parallax"><img src="img/parallax1.jpg"></div>
-</div>
 
-<!--Footer-->
-<footer id="contact" class="page-footer light-green darken-4 scrollspy">
-    <div class="container">  
-        <div class="row">
-            <div class="col l6 s12">
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s6">
-                            <i class="mdi-action-account-circle prefix white-text"></i>
-                            <input id="icon_prefix" type="text" class="validate white-text">
-                            <label for="icon_prefix" class="white-text">Name</label>
-                        </div>
-                        <div class="input-field col s6">
-                            <i class="mdi-communication-email prefix white-text"></i>
-                            <input id="icon_email" type="email" class="validate white-text">
-                            <label for="icon_email" class="white-text">Email-id</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <i class="mdi-editor-mode-edit prefix white-text"></i>
-                            <textarea id="icon_prefix2" class="materialize-textarea white-text"></textarea>
-                            <label for="icon_prefix2" class="white-text">Message</label>
-                        </div>
-                        <div class="col offset-s7 s5">
-                            <button class="btn waves-effect waves-light light-green darken-1" type="submit" name="action">Submit
-                                <i class="mdi-content-send right white-text"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col l3 s12">
-                <h5 class="white-text">danielcavalli.github.io</h5>
-                <ul>
-                    <li><a class="white-text" href="http://danielcavalli.github.io/">Acess Panel</a></li>
-                    <li><a class="white-text" href="http://danielcavalli.github.io/portfolio/index.html">CoinChart</a></li>
-                </ul>
-            </div>
-            <div class="col l3 s12">
-                <h5 class="white-text">Social</h5>
-                <ul>
-                    <li>
-                        <a class="white-text" href="http://www.facebook.com/daniel.opression" target="_blank">
-                            <i class="small fa fa-facebook-square white-text"></i> Facebook
-                        </a>
-                    </li>
-                    <li>
-                        <a class="white-text" href="http://github.com/danielcavalli" target="_blank">
-                            <i class="small fa fa-github-square white-text"></i> Github
-                        </a>
-                    </li>
-                    <li>
-                        <a class="white-text" href="http://br.linkedin.com/in/cavallidaniel" target="_blank">
-                            <i class="small fa fa-linkedin-square white-text"></i> Linkedin
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </div>
-    </div>
-    <div class="footer-copyright green darken-4">
-        <div class="container">
-            Made with <a class="white-text" href="http://materializecss.com/">materializecss</a> © Daniel Cavalli. Half of the rights reserved.
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
         </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-</footer>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
 
 
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="../Materialize/js/materialize.js"></script>
     <script src="../Materialize/js/init.js"></script>
+	<script>
+		document.getElementById("LiteCoin").innerHTML = "Are you okay? I highly recommend you to not use drugs when navigating in web.";
+	</script>
 
     </body>
 </html>
