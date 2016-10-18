@@ -8,34 +8,48 @@
 
     <!-- CSS  -->
     <link href="../Materialize/css/font-awesome.min.css" type="text/css" rel="stylesheet" >
-    <script src="../Materialize/js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="../Materialize/js/modernizr.js"></script>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../Materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="../Materialize/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 <body>
-  <nav class="light-green lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo light">Daniel Cavalli</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+<div class="navbar-fixed">
+   <nav class="green lighten-1" role="navigation">
+		<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo light">Daniel Cavalli</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="#">Navbar Link</a></li>
+			</ul>
+			<ul id="nav-mobile" class="side-nav">
+				<li><a href="#">Navbar Link</a></li>
+			</ul>
+			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+		</div>
+	</nav>
+ </div>
+<!--Wrapper-->
+<div class="section no-pad-bot green lighten-1" id="index-banner">
+    <div class="container">
+        <h1 class="text_h center header cd-headline letters type">
+            <span>Daniel C.</span> 
+            <span class="cd-words-wrapper waiting">
+                <b class="is-visible">Programmer</b>
+                <b>Economist</b>
+				<b>Something</b>
+            </span>
+        </h1>
     </div>
-  </nav>
+</div>
   <!--First Block of Content-->
     <div class="section no-pad-bot" id="index-banner">
         <div class="container">
-            <h1 class="header center teal-text text-darken-2">Error 400</h1>
+            <h1 class="header center teal-text text-darken-2"></h1>
             <div class="row center">
                 <h6 class="header col s12 light">Bad Request</h6>
-				<h5 class="header col s12 light"><font color="white" id="LiteCoin"></h5>
+				<h5 class="header col s12 light"><font color="black" id="LiteCoin"></font></h5>
             </div>
             <div class="row center">
-                <a id="CurrentColor" onclick = "colorChanger()" class="btn-large waves-effect waves-light darken-1 teal">Don't Click</a>
+                <a id="CurrentColor" onclick = "dontclick()" class="btn-large waves-effect waves-light lighten-4 green">Don't Click</a>
             </div>
             </br>
             </br>
@@ -87,7 +101,7 @@
                         <p><a href="1.html">Tetrapletiqui</a></p>
                     </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><b>Tetrapletiqui</b> <i class="mdi-navigation-close right"></i></span>
+                        <span class="card-title grey-text text-darken-4"><b>Tetrapletiqui</b> <i class="small material-icons right">clear</i></span>
                         <p>An infinity runner game that your objective is just don't get angry with it. Really, don't take this game seriously,	
 						he's really good at making you be angry and will kill you if it want to. Just to piss you off. </p>
 						<p><b> Engine: </b> Unity</p>
@@ -109,7 +123,7 @@
                         <p><a href="#">Download</a></p>
                     </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><b>Oni </b><i class="mdi-navigation-close right"></i></span>
+                        <span class="card-title grey-text text-darken-4"><b>Oni </b><i class="small material-icons right">clear</i></span>
                         <p>An admin game where the player manages a bus company of a typical brazilian city from the beginning with few bus until manage 
 						the most powerful consortium of the city.</p>
 						<p><b> Engine: </b> Unity</p>
@@ -132,7 +146,7 @@
                         <p><a href="#">Project link</a></p>
                     </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><span class="span_h2"><b>Mini</b></span>Limpic <i class="mdi-navigation-close right"></i></span>
+                        <span class="card-title grey-text text-darken-4"><span class="span_h2"><b>Mini</b></span>Limpic <i class="small material-icons right">clear</i></span>
                         <p>"A game... With Games.. IN THE GAME! Great Game." - MiniLympics is a game made for SBGames, an event from Brasil that gives to the winner a certificate and great recognizing. It's a action-puzzle game with theme based on Paralympics, uses minigames to introduce the action and puzzle genre, we have 30 minigames for this.</p>
 						<p><b> Engine: </b> Unity</p>
 						<p><b> Release Date: </b> 03/08/2015</p>
@@ -154,7 +168,7 @@
                         <p><a href="#">Google Play</a></p>
                     </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><b>Insighting </b> <i class="mdi-navigation-close right"></i></span>
+                        <span class="card-title grey-text text-darken-4"><b>Insighting </b> <i class="small material-icons right">clear</i></span>
                         <p>An app to manage Insight Cards of a project using Design Thinking methodology. Through a exploratory research we discovered that the major issue of that process is to manage the Insight Cards in a easy way.</p>
 						<p><b> Dev Space: </b> Android Studio</p>
 						<p><b> Release Date: </b> 07/07/2016</p>
@@ -176,7 +190,7 @@
                         <p><a href="#">Project link</a></p>
                     </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><b> God's Game of Cube</b> <i class="mdi-navigation-close right"></i></span>
+                        <span class="card-title grey-text text-darken-4"><b> God's Game of Cube</b> <i class="small material-icons right">clear</i></span>
                         <p>God’s Game of Cube it's an academic experiment about interactions of polygons in a serie of situations involving extraordinary physics.</p>
 						<p><b> Engine: </b> Unity</p>
 						<p><b> Release Date: </b> 23/10/2015</p>
@@ -198,7 +212,7 @@
                         <p><a href="#">Acess Link</a></p>
                     </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Running to Rome <i class="mdi-navigation-close right"></i></span>
+                        <span class="card-title grey-text text-darken-4">Running to Rome <i class="tiny material-icons right">clear</i></span>
                         <p>An Infinity Runner which takes place in Ancient Rome. You are a Barbarian trying to reach Rome capitol's and stop the Emperor to attack your village.</p>
 						<p><b> Engine: </b> Browser Based</p>
 						<p><b> Release Date: </b> 18/11/2014</p>
@@ -212,7 +226,7 @@
         </div>
     </div>
 </div>
-  <footer class="page-footer orange">
+  <footer class="page-footer green">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -254,7 +268,78 @@
     <script src="../Materialize/js/materialize.js"></script>
     <script src="../Materialize/js/init.js"></script>
 	<script>
-		document.getElementById("LiteCoin").innerHTML = "Are you okay? I highly recommend you to not use drugs when navigating in web.";
+		var random = Math.floor((Math.random() * 10) + 1);;
+		if(random == 1)
+		{
+			document.getElementById("LiteCoin").innerHTML = "Are you okay? I highly recommend you to not use drugs when navigating in web.";
+		}
+		if(random == 2)
+		{
+			document.getElementById("LiteCoin").innerHTML = "During his baby age Daniel had fallen from the bed a lot of times";
+		}
+		if(random == 3)
+		{
+			document.getElementById("LiteCoin").innerHTML = "\"Humm... What if whales had miniguns insted of eyes?\" - Cavalli, Daniel.";
+		}
+		if(random == 4)
+		{
+			document.getElementById("LiteCoin").innerHTML = "You need a good person in your life. I know it may be hard for someone like you but try!";
+		}
+		if(random == 5)
+		{
+			document.getElementById("LiteCoin").innerHTML = "Some people say that if you click the \"Don't Click\" button you'll get some awesome messages. I had never done  it 'till a 10000 clicks";
+		}
+		if(random == 6)
+		{
+			document.getElementById("LiteCoin").innerHTML = "\"Try not to be an asshole\", it's a motto of one of my teachers in high school.";
+		}
+		if(random == 7)
+		{
+			document.getElementById("LiteCoin").innerHTML = "Tax is Theft and evasion is ligitimated defense. You can't argue on that.";
+		}
+		if(random == 8)
+		{
+			document.getElementById("LiteCoin").innerHTML = "I'm getting really tired of writing this phrases.";
+		}
+		if(random == 9)
+		{
+			document.getElementById("LiteCoin").innerHTML = "Almost there, just one more phrase and I'm free.";
+		}
+		if(random == 10)
+		{
+			document.getElementById("LiteCoin").innerHTML = "\"Commit this shit and let me be a useful person\", said a friend while I were throwing my time away with this.";
+		}
+		//Don't Click
+		var number = 0;
+
+        function dontclick() 
+		{
+            number += 1;
+            if (number == 1) {
+                Materialize.toast("\"Don't Click\", you read it?", 2000);
+            }
+            if (number == 10) {
+                Materialize.toast("You really have problems, don't you?", 6000);
+            }
+            if (number == 50) {
+                Materialize.toast("HOLY FUCKING SATAN! Why? Just tell me that. Are you in drugs?", 10000);
+            }
+            if (number == 250) {
+                Materialize.toast("\"Some people say that out of my room there is something called 'world', maybe I should see if it's truth.\" - He thought in a moment of loneliness", 9000);
+            }
+            if (number == 1000) {
+                Materialize.toast("You know that no one will never heard about this, don't you?", 10000);
+            }
+            if (number == 2500) {
+                Materialize.toast("Hmm, maybe you're thinking you'll get to your friends and say \"Hey, I've got the '5 thousand clicks' message, did you get it? It's sooooo awesome\", I highly don't recommend this, it'll be awkward.", 15000);
+            }
+            if (number == 5000) {
+                Materialize.toast("You need a good person in your life. I know it may be hard for someone like you but try!", 10000);
+            }
+            if (number == 10000) {
+                Materialize.toast("I'm out, you won... You really are the strangest person I've ever seen.", 10000);
+            }
+        }
 	</script>
 
     </body>
