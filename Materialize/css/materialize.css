@@ -8474,6 +8474,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 			font-family: FontAwesome;
 			font-style: normal;
 			font-weight: normal;
+			font-size: 2em;
 			text-transform: none !important;
 		}
 
@@ -8482,7 +8483,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 		}
 
 		.icon.alt:before {
-			background-color: #ffffff;
+			background-color: transparent;
 			border-radius: 100%;
 			color: #242943;
 			display: inline-block;
